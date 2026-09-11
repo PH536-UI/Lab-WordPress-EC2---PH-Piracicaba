@@ -1,23 +1,19 @@
-# Lab WordPress EC2 - PH@Piracicaba
-Ambiente Dockerizado para WordPress em AWS EC2 - DevOps - 09/09/2026
+cd ~/Lab-WordPress-EC2---PH-Piracicaba 2>/dev/null || git clone https://github.com/PH536-UI/Lab-WordPress-EC2---PH-Piracicaba.git ~/Lab-WordPress-EC2---PH-Piracicaba
+cd ~/Lab-WordPress-EC2---PH-Piracicaba
+cat > README.md << 'EOF'
+# 🚀 Lab WordPress EC2 - PH Piracicaba
 
-## Stack
-- WordPress 6.5 + PHP 8.2 + Apache
-- MySQL 5.7
-- Docker 24.0 + Compose v2
-- EC2 t3.medium sa-east-1
+### 🇧🇷 PT-BR
+Deploy de WordPress containerizado na AWS EC2 com Docker e Docker Compose.
+- Setup completo EC2 + Linux + Docker
+- Guia prático hands-on
 
-## Quick Start
-git clone https://github.com/PH536-UI/Lab-WordPress-EC2---PH-Piracicaba.git
-cd Lab-WordPress-EC2---PH-Piracicaba
-cp .env.example .env
-docker compose up -d
+### 🇺🇸 EN
+Containerized WordPress deployment on AWS EC2 using Docker.
+- Complete EC2 setup guide
+- Production-ready approach
 
-## Arquitetura
-Ver docs/ARCHITECTURE.md e docs/infografico.png
-
-## Backup Restore
-./backup.sh
-./restore.sh 20260909_203757
-
-Status: Backup 41M + Restore 200 OK - 09/09/2026 Piracicaba
+Stack: AWS EC2 | Docker | Linux | WordPress
+Author: Paulo Henrique Pereira | 4x AWS Certified | SRE
+EOF
+git add README.md && git commit -m "docs: bilingual readme" && git push
